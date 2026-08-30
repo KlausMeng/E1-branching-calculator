@@ -8,6 +8,8 @@ It evaluates the required Wigner 3-j and 6-j symbols directly with Racah
 factorial formulas. There are no third-party dependencies: only the Python
 standard library is used.
 
+The emission braching ratio intensities can be verified with data tabulated in Hephaestus.
+
 ## Scope
 
 The state model is
