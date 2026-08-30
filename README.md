@@ -12,16 +12,16 @@ standard library is used.
 
 The state model is
 
-\[
+```math
 |n\,l\,s\,j\,m_j\rangle, \qquad s=\tfrac12.
-\]
+```
 
 Here, `j` is the total angular momentum of one electron, not its spin
 projection. This is not a general many-electron atomic-term calculator.
 
 The default quantity is the complete-multiplet angular line strength:
 
-\[
+```math
 S_{if}^{(\mathrm{ang})} =
 (2j_i+1)(2j_f+1)
 \begin{Bmatrix}
@@ -29,7 +29,7 @@ l_f & j_f & \tfrac12\\
 j_i & l_i & 1
 \end{Bmatrix}^{2}
 |\langle l_f\|C^{(1)}\|l_i\rangle|^2.
-\]
+```
 
 It is summed over all initial and final magnetic substates and photon
 polarizations, with the radial integral factored out. It is therefore an
@@ -46,8 +46,8 @@ intensity.
 Clone the repository and enter it:
 
 ```bash
-git clone https://github.com/KlausMeng/e1-branching-calculator.git
-cd e1-branching-calculator
+git clone https://github.com/KlausMeng/E1-branching-calculator.git
+cd E1-branching-calculator
 ```
 
 Run the built-in tests:
@@ -138,12 +138,12 @@ L2 total : L3 total = 5 : 10 = 1 : 2
 
 Absorption weighting is
 
-\[
+```math
 S_{if}^{(\mathrm{weighted})} =
 S_{if}^{(\mathrm{ang})}
 \frac{N_i}{2j_i+1}
 \frac{H_f}{2j_f+1}.
-\]
+```
 
 Counts can be supplied explicitly:
 
@@ -298,4 +298,3 @@ python e1_branching.py --self-test
 The built-in suite checks label parsing, E1 selection rules, reversal
 symmetry, invalid populations, the `9:1` and `5:1:9` angular ratios, and the
 statistical `L2:L3 = 1:2` absorption limit.
-
