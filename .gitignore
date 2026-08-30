@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local implementation specification; not part of the published package.
+codex_prompt_e1_branching_ratio_calculator.md
